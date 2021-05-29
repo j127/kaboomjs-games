@@ -1,28 +1,30 @@
 {
-  "name": "@j127/kaboomjs-games",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [],
-  "author": "J. Cohen <hostelmarketing@gmail.com> (https://github.com/j127)",
-  "license": "ISC",
-  "dependencies": {
-    "kaboom": "^0.5.1",
-    "lodash": "^4.17.21",
-    "matter-js": "^0.17.1"
-  },
-  "devDependencies": {
-    "@types/jest": "^26.0.23",
-    "@types/lodash": "^4.14.170",
-    "@types/matter-js": "^0.14.12",
-    "jest": "^27.0.3",
-    "parcel-bundler": "^1.12.5",
-    "prettier": "^2.3.0",
-    "sass": "^1.34.0",
-    "ts-node": "^10.0.0",
-    "typescript": "^4.3.2"
-  }
+    "name": "@j127/kaboomjs-games",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "jest",
+        "format": "prettier \"**/*.{ts,vue,js,json,jsx,tsx,css,scss,html,md,mdx}\" --write",
+        "start": "parcel serve src/index.html"
+    },
+    "keywords": [],
+    "author": "J. Cohen",
+    "license": "UNLICENSED",
+    "dependencies": {
+        "kaboom": "^0.5.1",
+        "lodash": "^4.17.21",
+        "matter-js": "^0.17.1"
+    },
+    "devDependencies": {
+        "@types/jest": "^26.0.23",
+        "@types/lodash": "^4.14.170",
+        "@types/matter-js": "^0.14.12",
+        "jest": "^27.0.3",
+        "parcel-bundler": "^1.12.5",
+        "prettier": "^2.3.0",
+        "sass": "^1.34.0",
+        "ts-node": "^10.0.0",
+        "typescript": "^4.3.2"
+    }
 }
