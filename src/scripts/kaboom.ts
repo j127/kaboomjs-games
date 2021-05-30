@@ -1,8 +1,8 @@
 // See the settings page: https://kaboomjs.com/
 export const k = kaboom({
-    width: 320,
-    height: 240,
-    scale: 2.5,
+    // width: 320,
+    // height: 240,
+    // scale: 2.5,
     canvas: document.getElementById("game"),
     clearColor: [0, 0, 0, 1],
     // fullscreen: true,
