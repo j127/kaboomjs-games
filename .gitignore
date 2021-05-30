@@ -1,7 +1,9 @@
+*.zip
 .env
 .envrc
 dist/
 build/
+.cache/
 
 *.bak
 *.orig
