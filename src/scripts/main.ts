@@ -1,10 +1,11 @@
-import kaboom, { Vec2, GameObj } from "kaboom";
-// import asepritePlugin from "kaboom/plugins/aseprite";
+import k from "./kaboom";
 
-const k = kaboom({
-    // plugins: [asepritePlugin],
+import Start from "./scenes/start";
+
+k.scene("start", Start);
+
+k.scene("main", () => {
+    k.go("start");
 });
 
-function spawnBullet(p: Vec2): GameObj {
-    return k.add([k.pos(p), k.sprite("bullet")]);
-}
+k.start("main");
