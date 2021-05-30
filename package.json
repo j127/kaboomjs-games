@@ -6,7 +6,9 @@
     "scripts": {
         "test": "jest",
         "format": "prettier \"**/*.{ts,vue,js,json,jsx,tsx,css,scss,html,md,mdx}\" --write",
-        "start": "parcel serve src/index.html"
+        "start": "parcel serve src/index.html",
+        "build": "parcel build src/index.html --no-source-maps",
+        "deploy": "npm run build && netlify deploy --prod --dir=dist"
     },
     "keywords": [],
     "author": "J. Cohen",
