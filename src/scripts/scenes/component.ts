@@ -1,5 +1,6 @@
 import k from "../kaboom";
 import level1 from "../levels/level-1";
+import big from "../components/big";
 
 export default function Component() {
     k.addLevel(level1, {
@@ -31,16 +32,21 @@ export default function Component() {
         k.origin("center"),
         k.scale(1),
         k.body(),
+        big(),
     ]);
     player.play("idle");
 
+    k.keyPress("b", () => {
+        player.biggify();
+    });
+
     k.keyPress("left", () => {
-        player.scale.x = -1;
+        player.scale.x = player.isBig() ? -2 : -1;
         player.play("run");
     });
 
     k.keyPress("right", () => {
-        player.scale.x = 1;
+        player.scale.x = player.isBig() ? 2 : 1;
         player.play("run");
     });
 
