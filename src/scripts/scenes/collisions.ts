@@ -13,7 +13,7 @@ export default function Collisions() {
 
     k.add([
         k.pos(k.width() * 0.5, k.height() * 0),
-        k.text("hell vurld", 16),
+        k.text("hello world", 16),
         k.origin("center"),
         k.body(),
         k.solid(),
