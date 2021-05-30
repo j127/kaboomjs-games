@@ -1,7 +1,7 @@
 import k from "../kaboom";
 import level1 from "../levels/level-1";
 
-export default function Level() {
+export default function Component() {
     k.addLevel(level1, {
         width: 16,
         height: 16,
