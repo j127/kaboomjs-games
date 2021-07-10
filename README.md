@@ -7,4 +7,4 @@ $ npm install
 $ npm start
 ```
 
-Then visit [localhost:1234](http://localhost:1234/).
+Then visit `http://localhost:1234/`.
